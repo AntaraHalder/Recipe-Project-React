@@ -8,10 +8,9 @@ import { Link, useParams } from "react-router";
 function RecipeDetail() {
 
     const { id } = useParams();
-
-    const [recipe, setRecipe] = useState([]);
-    const [loading, setLoading] = useState(true)
-    const [errorMsg, setErrorMsg] = useState("")
+    const [recipe, setRecipe] = useState(null);
+    const [loading, setLoading] = useState(true);
+    const [errorMsg, setErrorMsg] = useState("");
 
     async function fetchRecipe(params) {
         try {
