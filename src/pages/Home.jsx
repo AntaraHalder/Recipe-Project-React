@@ -84,7 +84,7 @@ function Home() {
         }
       </div>
 
-      {recipes.length === 0  && (
+      {recipes.length < total && (
         <div className="text-center mt-8">
           <button
             type="button"
